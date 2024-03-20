@@ -1,0 +1,103 @@
+/*Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* Global Variables */
+:root {
+  --sideBGColor: #040b14;
+  --themeColor: #00a783;
+  --iconBGColor: #2c2f3f;
+  --textColor: #525252;
+  --bgColor: #f7f7f7;
+}
+
+/* Header */
+header {
+  height: 100vh;
+  width: 300px;
+  padding: 15px 30px;
+  background: var(--sideBGColor);
+  position: sticky;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 99;
+  transition: 0.4s;
+}
+
+header .profile {
+  text-align: center;
+  margin: 10px 0;
+}
+
+header .profile img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 10px solid var(--iconBGColor);
+}
+
+header .profile h1 {
+  color: white;
+  font-weight: 600;
+}
+
+header .profile .social-icon a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  line-height: 37px;
+  font-size: 18px;
+  margin: 1.5px;
+  border-radius: 50%;
+  background: var(--iconBGColor);
+  transition: 0.4s;
+}
+
+header .profile .social-icon a:hover {
+  color: var(--themeColor);
+  transform: scale(0.9);
+}
+
+/* Navbar */
+header nav {
+  margin-top: 20px;
+}
+
+header nav ul li a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 7px 10px;
+  margin: 5px 0;
+  color: lightgray;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.6px;
+}
+
+header nav ul li a i {
+  margin-right: 10px;
+  font-size: 18px;
+  transition: 0.4s;
+}
+
+header nav ul li a:hover i {
+  color: var(--themeColor);
+}
